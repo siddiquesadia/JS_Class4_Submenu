@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+}
+
+nav button{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+aside{
+    width: 150px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: 0.35s;
+}
+
+aside.active{
+    transform: translateX(100%);
+}
+
+aside a{
+    color: black;
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    margin-left: -60px;
+    
+}
+
+aside li:hover a{
+    background-color: rgb(231, 249, 235);
+}
